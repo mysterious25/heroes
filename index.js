@@ -1,6 +1,6 @@
 import { Orc } from "./Orc.js";
 import { Knight } from "./Knight.js";
-import { DarkElf } from "./DarkElf";
+import { DarkElf } from "./DarkElf.js";
 
 
 const orc1 = new Orc(0, 1);
@@ -19,6 +19,8 @@ while (
 
   orc2.isAlive() && orc2.attack(knight);
   orc1.isAlive() && orc1.attack(knight);
+
+  darkElf.isAlive() && darkElf.attack(knight)
 }
 
 
